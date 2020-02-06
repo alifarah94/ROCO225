@@ -8,6 +8,9 @@ a =1;
 y=a*sin(2*pi*frequency*t);
 
 plot(t,y);
+title('Sine Wave')
+xlabel('time')
+ylabel('signal value')
 %sound(y,frequency)
 end
 
