@@ -19,5 +19,21 @@ sys = tf(numerator,[a b c d]); % using the tf function to calculate
 % final value = 10/(40) = 1/4
 
 
-%step(sys) 
+
 bode(sys)
+% to find the bandwidth frequency from the bode plot you make a line from
+% the y-intercept all the way to the graphs line. the x-axis value of the
+% meeting point is the value of the bandwidth frequency.
+% y-intercept= -15dB, Bandwidth frequency= 1.38 rads/s
+
+
+step(sys) 
+% The system rise time is the time it takes for the system to get from 10%
+% to 90% 
+% rise time = 1.59s
+
+
+%what is the significance of the gain and phase margins?
+% the gain is the ammount of 
+
+
