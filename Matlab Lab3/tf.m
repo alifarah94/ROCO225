@@ -34,6 +34,11 @@ step(sys)
 
 
 %what is the significance of the gain and phase margins?
-% the gain is the ammount of 
+% the gain is the ammount of energy needed from the frequency to go to -3dB
+% to 0 dB when the system is a 180deg
+% The phase margin is defined as the change in open-loop phase shift
+% required to make a closed-loop system unstable
 
 
+
+cl = 10 * sys/(1+10*sys);
