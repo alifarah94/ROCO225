@@ -27,7 +27,7 @@ bode(sys)
 % y-intercept= -15dB, Bandwidth frequency= 1.38 rads/s
 
 
-step(sys) 
+% step(sys) 
 % The system rise time is the time it takes for the system to get from 10%
 % to 90% 
 % rise time = 1.59s
@@ -42,3 +42,16 @@ step(sys)
 
 
 cl = 10 * sys/(1+10*sys);
+% bode(cl)
+
+% gain = 20*log(gain)
+% 31.1 dB = 20*log(gain)
+% (31.1/20) = log(gain)
+% 10^(31.1/20) = gain
+% gain = 35.9
+
+% giving a system a value above a gain margin will extend the time that the
+% system will be stable again.
+
+% giving a system a value below the gain system will make the system
+% unstable.
